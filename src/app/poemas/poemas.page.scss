@@ -1,0 +1,246 @@
+.poemas-content {
+
+    --background: #f6f4ef;
+
+}
+
+/* HEADER */
+
+.top-area {
+
+    padding: 30px 22px 10px;
+
+}
+
+.mini-badge {
+
+    display: inline-block;
+
+    background: #e8dcc5;
+
+    color: #3f3528;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+.top-area h1 {
+
+    font-size: 52px;
+
+    line-height: 0.95;
+
+    font-weight: 800;
+
+    color: #111827;
+
+    margin: 0 0 18px;
+
+}
+
+.top-area h1 span {
+
+    color: #7c3aed;
+
+    font-style: italic;
+
+    font-weight: 500;
+
+}
+
+.top-area p {
+
+    color: #6b7280;
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+    max-width: 320px;
+
+}
+
+/* LOADING */
+
+.loading-area {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+.loading-icon {
+
+    font-size: 50px;
+
+    color: #7c3aed;
+
+    margin-bottom: 12px;
+
+}
+
+/* CARD */
+
+.poema-card {
+
+    margin: 22px;
+
+    background: white;
+
+    border-radius: 32px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.06);
+
+}
+
+.poema-image {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+}
+
+/* BODY */
+
+.poema-body {
+
+    padding: 24px;
+
+}
+
+.genero {
+
+    display: inline-block;
+
+    background: #dcd4f5;
+
+    color: #43345f;
+
+    padding: 7px 16px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+}
+
+.poema-body h2 {
+
+    font-size: 30px;
+
+    font-weight: 800;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+
+}
+
+.poema-body h3 {
+
+    color: #6b7280;
+
+    font-weight: 500;
+
+    margin-bottom: 12px;
+
+}
+
+.fecha {
+
+    color: #9ca3af;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+
+}
+
+.contenido {
+
+    white-space: pre-line;
+
+    line-height: 2;
+
+    color: #374151;
+
+    font-size: 15px;
+
+}
+
+/* BOTONES */
+
+.acciones {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+.btn-edit,
+.btn-delete,
+.btn-view {
+
+    flex: 1;
+
+    height: 48px;
+
+    font-weight: 700;
+
+    --border-radius: 18px;
+
+}
+
+/* FAB */
+
+ion-fab-button {
+
+    --border-radius: 22px;
+
+    --box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.18);
+
+}
+
+.search-area {
+
+    padding: 0 18px 10px;
+
+}
+
+ion-searchbar {
+
+    --background: white;
+
+    --border-radius: 20px;
+
+    --box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.05);
+
+}

@@ -1,0 +1,73 @@
+.fondo {
+  --background: linear-gradient(160deg, #12002f, #25115c, #0d0d1f);
+}
+
+.hero {
+  padding: 45px 24px 25px;
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 15px;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d8d4ff;
+  margin-bottom: 25px;
+}
+
+.btn-principal {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1b103f;
+  background: #f6d365;
+  box-shadow: 0 10px 25px rgba(246, 211, 101, 0.35);
+}
+
+.cards {
+  padding: 10px 20px 35px;
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  padding: 20px;
+  color: white;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card span {
+  font-size: 32px;
+}
+
+.card h2 {
+  margin: 10px 0 6px;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 0;
+  color: #d8d4ff;
+  font-size: 14px;
+}

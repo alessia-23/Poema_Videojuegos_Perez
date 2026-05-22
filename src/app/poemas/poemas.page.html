@@ -1,0 +1,131 @@
+<ion-content class="poemas-content">
+
+  <!-- HEADER -->
+
+  <div class="top-area">
+
+    <span class="mini-badge">
+      Biblioteca Poética
+    </span>
+
+    <h1>
+      Poemas &
+      <span>Versos</span>
+    </h1>
+
+    <p>
+      Explora poemas modernos,
+      emociones y literatura
+      en una experiencia visual única.
+    </p>
+
+  </div>
+
+  <!-- BUSCADOR -->
+
+  <div class="search-area">
+
+    <ion-searchbar placeholder="Buscar por autor..." (ionInput)="buscarPoemas($event)">
+    </ion-searchbar>
+
+  </div>
+
+  <!-- LOADING -->
+
+  <div class="loading-area" *ngIf="cargando">
+
+    <ion-icon name="book-outline" class="loading-icon"></ion-icon>
+
+    <p>Cargando poemas...</p>
+
+  </div>
+
+  <!-- LISTA -->
+
+  <div class="poema-card" *ngFor="let poema of listaPoemas">
+
+    <!-- IMAGEN -->
+
+    <img *ngIf="poema.imagen_url" [src]="poema.imagen_url" class="poema-image" />
+
+    <!-- BODY -->
+
+    <div class="poema-body">
+
+      <span class="genero" *ngIf="poema.genero">
+        {{ poema.genero }}
+      </span>
+
+      <h2>
+        {{ poema.titulo }}
+      </h2>
+
+      <h3>
+        {{ poema.autor }}
+      </h3>
+
+      <p class="fecha" *ngIf="poema.fecha">
+        {{ poema.fecha }}
+      </p>
+
+      <p class="contenido">
+        {{
+        poema.contenido.length > 60
+        ? (poema.contenido.slice(0, 60) + '...')
+        : poema.contenido
+        }}
+      </p>
+
+      <!-- BOTONES -->
+
+      <div class="acciones">
+
+        <!-- EDITAR -->
+
+        <ion-button fill="solid" color="medium" class="btn-edit" (click)="editarPoema(poema)">
+
+          <ion-icon slot="start" name="create-outline"></ion-icon>
+
+          Editar
+
+        </ion-button>
+
+        <!-- VER MÁS -->
+
+        <ion-button fill="solid" color="dark" class="btn-view">
+
+          <ion-icon slot="start" name="book-outline"></ion-icon>
+
+          Ver más
+
+        </ion-button>
+
+        <!-- ELIMINAR -->
+
+        <ion-button fill="solid" color="danger" class="btn-delete" (click)="eliminarPoema(poema.id)">
+
+          <ion-icon slot="start" name="trash-outline"></ion-icon>
+
+          Eliminar
+
+        </ion-button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FAB -->
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+
+    <ion-fab-button color="dark" routerLink="/poema-form">
+
+      <ion-icon name="add-outline"></ion-icon>
+
+    </ion-fab-button>
+
+  </ion-fab>
+
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-title>{{ id ? 'Editar Videojuego' : 'Nuevo Videojuego' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="fondo">
+
+  <section class="form-card">
+
+    <ion-item>
+      <ion-label position="floating">Título</ion-label>
+      <ion-input [(ngModel)]="videojuego.titulo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Plataforma</ion-label>
+      <ion-input [(ngModel)]="videojuego.plataforma"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Precio</ion-label>
+      <ion-input type="number" [(ngModel)]="videojuego.precio"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Stock</ion-label>
+      <ion-input type="number" [(ngModel)]="videojuego.stock"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Categoría</ion-label>
+      <ion-input [(ngModel)]="videojuego.categoria"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">URL de imagen</ion-label>
+      <ion-input [(ngModel)]="videojuego.imagen_url"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="btn-guardar" (click)="guardar()">
+      Guardar
+    </ion-button>
+
+  </section>
+
+</ion-content>

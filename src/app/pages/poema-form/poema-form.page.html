@@ -1,0 +1,147 @@
+<ion-header>
+
+  <ion-toolbar class="toolbar">
+
+    <ion-title>
+
+      {{ id
+      ? 'Editar Poema'
+      : 'Nuevo Poema' }}
+
+    </ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="poema-form-content">
+
+  <!-- HERO -->
+
+  <div class="hero-area">
+
+    <span class="mini-badge">
+      Literatura Moderna
+    </span>
+
+    <h1 *ngIf="!id">
+
+      Crear
+      <span>Poema</span>
+
+    </h1>
+
+    <h1 *ngIf="id">
+
+      Editar
+      <span>Poema</span>
+
+    </h1>
+
+    <p *ngIf="!id">
+
+      Guarda poemas únicos
+      y construye tu propia
+      biblioteca poética visual.
+
+    </p>
+
+    <p *ngIf="id">
+
+      Modifica la información
+      y actualiza tu colección
+      literaria personalizada.
+
+    </p>
+
+  </div>
+
+  <!-- CARD -->
+
+  <div class="form-card">
+
+    <!-- TITULO -->
+
+    <ion-item>
+
+      <ion-label position="stacked">
+        Título
+      </ion-label>
+
+      <ion-input [(ngModel)]="poema.titulo"></ion-input>
+
+    </ion-item>
+
+    <!-- AUTOR -->
+
+    <ion-item>
+
+      <ion-label position="stacked">
+        Autor
+      </ion-label>
+
+      <ion-input [(ngModel)]="poema.autor"></ion-input>
+
+    </ion-item>
+
+    <!-- GENERO -->
+
+    <ion-item>
+
+      <ion-label position="stacked">
+        Género
+      </ion-label>
+
+      <ion-input [(ngModel)]="poema.genero"></ion-input>
+
+    </ion-item>
+
+    <!-- FECHA -->
+
+    <ion-item>
+
+      <ion-label position="stacked">
+        Fecha
+      </ion-label>
+
+      <ion-input type="date" [(ngModel)]="poema.fecha"></ion-input>
+
+    </ion-item>
+
+    <!-- IMAGEN -->
+
+    <ion-item>
+
+      <ion-label position="stacked">
+        Imagen del poema
+      </ion-label>
+
+      <input type="file" accept="image/*" (change)="seleccionarImagen($event)" />
+
+    </ion-item>
+
+    <!-- CONTENIDO -->
+
+    <ion-item class="textarea-item">
+
+      <ion-label position="stacked">
+        Contenido
+      </ion-label>
+
+      <ion-textarea autoGrow="true" rows="10" [(ngModel)]="poema.contenido"></ion-textarea>
+
+    </ion-item>
+
+    <!-- BOTON -->
+
+    <ion-button expand="block" class="btn-guardar" (click)="guardar()">
+
+      {{ id
+      ? 'Actualizar Poema'
+      : 'Guardar Poema' }}
+
+    </ion-button>
+
+  </div>
+
+</ion-content>

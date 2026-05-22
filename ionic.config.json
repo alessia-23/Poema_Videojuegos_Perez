@@ -1,0 +1,7 @@
+{
+  "name": "videojuegos-crud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
