@@ -15,14 +15,16 @@ El sistema permite administrar por completo una colección literaria a través d
 3.  **Corrección de Versos (Actualizar):** Ofrece la opción de editar cualquier poema almacenado para corregir la ortografía, modificar estrofas o pulir la rima.
 4.  **Quitar Poemas (Eliminar):** Permite borrar de manera definitiva una composición de la biblioteca cuando ya no se desee conservar.
 
----
-
-## 🎨 Características de Diseño y Experiencia de Lectura
-
-La interfaz ha sido estructurada cuidadosamente para dar prioridad a la comodidad del lector:
-
-*   **Lectura en Formato Horizontal:** La aplicación se despliega de manera horizontal (Landscape) en el teléfono, imitando la distribución visual de un libro físico para que los versos largos no se corten bruscamente.
-*   **Pantallas Adaptables:** Todos los elementos visuales y las pantallas de bienvenida se ajustan a cualquier tamaño y resolución de celular, garantizando que los textos se mantengan siempre legibles y ordenados.
 
 ---
+# 📸 Capturas de la Aplicación
 
+| Pantalla | Vista |
+|---|---|
+| 📝 Poemas | <img width="560" height="889" alt="image" src="https://github.com/user-attachments/assets/8f65dfad-df0c-421c-b097-74cc961ab956" />|
+| 🔍 Búsqueda de poema | <img width="523" height="887" alt="image" src="https://github.com/user-attachments/assets/4f5af0df-f4b5-4dd6-ba12-6914b21ea7d4" />|
+| 📄 Crear poema | <img width="547" height="902" alt="image" src="https://github.com/user-attachments/assets/8d4344b8-03fe-4838-8f7d-45f9b8a400b5" />|
+| 📷 Multimedia |<img width="547" height="900" alt="image" src="https://github.com/user-attachments/assets/643cc615-6c97-4a24-9232-d9c06935b9d6" />|
+| 📷 Firebase Hosting |<img width="646" height="997" alt="image" src="https://github.com/user-attachments/assets/0ab7cccb-8f74-43b9-9611-317055a5c8e2" />|
+
+---
